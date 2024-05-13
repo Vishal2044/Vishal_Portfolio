@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Varotariya</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container"> <!--  HTML elements we use to create a section or a box on a web page -->
+            <nav>
+                <img src="./images/logo.png" alt="vishal_logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Devloper</p>
+                <h1>Hi, I'm <br> <span>Vishal</span> Varotariya</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row"> <!--here is two column(ubhu) -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A proficient HTML and CSS coder with hands-on experience in local databases and Bootstrap. Well-versed in Google Analytics, SEO strategies, and adept at using ChatGPT and Figma. Strong communication and teamwork skills, coupled with a positive mindset and leadership qualities, define my approach to collaborative and innovative projects.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certification')">Certification</p>
+                    </div>
+                    <!-- Skill -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Frontend Developer</li>
+                            <li><span>Figma</span><br>Designing Web/App interfaces</li>
+                            <li><span>Local Database</span><br></li>
+                            <li><span>Google Analyitcs</span><br></li>
+                            <li><span>Search Engine Optimization</span><br></li>
+                            <li><span>ChatGpt</span><br></li>
+                        </ul>
+                    </div>
+                    <!-- Education -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Technology</span><br>Computer Engineering(2022-2025)</li>
+                            <li><span>Diploma</span><br>Electrical Engineering(2019-2022)</li>
+                            <li><span>Join AKRSP</span><br>Learning basics of Computer and Skill Development
+                                (April-July:
+                                2022)<br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certification">
+                        <ul>
+                            <li><span>Programming Essentials in Python (10/2022 - 11/2022)</span><br>Programming Essentials in Python course, provided by Cisco Networking
+                                Academy®in collaboration with OpenEDG Python Institute:</li> <a href="./pdfs/vishal_python.pdf">View Certificate</a>
+                            <li><span>CSS3 (12/2022 - 01/2023)</span><br>Certificate Earned From Infosys</li> <a href="./pdfs/vishal_css3.pdf">View Certificate</a>
+                            <li><span>HTML5 - The Language (12/2022 - 01/2023)</span><br>Certificate Earned From Infosys</li><a href="./pdfs/vishal_html.pdf">View Certificate</a>
+                            <li><span>JavaScript (12/2022 - 01/2023)</span><br>Certificate Earned From Infosys</li><a href="./pdfs/vishal_javascript.pdf">View Certificate</a>
+                            <li><span>Oracle SQL (11/2020 - 12/2020)</span><br>Certificate Earned From Infosys</li><a href="./pdfs/vishal_oracle.pdf">View Certificate</a>
+                            <li><span>Java Programming Fundamentals (12/2022 - 01/2023)</span><br>Certificate Earned From Infosys</li><a href="./pdfs/vishal_java_programing_fundamental.pdf">View Certificate</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- My Project -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/event-manage.png">
+                    <div class="layer">
+                        <h3>Event Management Website</h3>
+                        <p>HTML,CSS,LOCAL DATABASE,PHP,LARAVEL</p>
+                        <a href="https://github.com/Vishal2044/Event-Management-Website">GitHub</a>
+                    </div>
+                </div>                
+                <div class="work">
+                    <img src="./images/school.jpg" style="height: 100%;">
+                    <div class="layer">
+                        <h3>School Website</h3>
+                        <p>REACTJS, .NET MVC, FIGMA, GOOGLE SHEET, LOCAL DB</p>
+                        <a href="https://github.com/Vishal2044/School_Website_ReactJs">GitHub Reactjs</a>
+                        <a href="https://github.com/Vishal2044/School_web_.net_mvc">GitHub.Net MVC </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/margdarshak.png">
+                    <div class="layer">
+                        <h3>Goverment Scheme Website</h3>
+                        <p>HTML,CSS,JAVASCRIPT</p>
+                        <a href="https://margdarshakguj.com/"> Live Demo</a>
+                        <a href="https://margdarshakguj.com/">GitHub</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/job-portal.png">
+                    <div class="layer">
+                        <h3>Job Portal Website</h3>
+                        <p>HTML,CSS,JAVASCRIPT</p>
+                        <a href="https://margdarshakguj.com/my_project/jobmargdarshak/index.html"> Live Demo</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/table-reserve.png">
+                    <div class="layer">
+                        <h3>Table Reservation App</h3>
+                        <p>ANDROID,KOTLIN,FIGMA,FIREBASE</p>
+                        <a href="https://github.com/Vishal2044/Table-Reservation-App">GitHub</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/to-do.png">
+                    <div class="layer">
+                        <h3>To-do App</h3>
+                        <p>JAVASCRIPT, HTML, CSS, GOOGLE SHEET</p>
+                        <a href="https://margdarshakguj.com/my_project/todolistinjs/index.html"> Live Demo</a>
+                        <a href="https://github.com/Vishal2044/To-Do-App-">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>varotariyavishal2044@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 9313460437</p>
+                    <div class="social-icon">
+                        <a href="https://linkedin.com/in/vishal-varotariya-a89209214/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Vishal2044"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/vishal_ahir_2044?igsh=dXhlNXVoeDEzcXhs"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="./VishalVarotariyaResume.pdf" class="btn btn2">Download Resume</a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Enter Your Name" required>
+                    <input type="email" name="Email" placeholder="Enter Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Enter Your Message"></textarea>
+                    <button href="" type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Ⓒ 2024 <span>Vd</span></p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
